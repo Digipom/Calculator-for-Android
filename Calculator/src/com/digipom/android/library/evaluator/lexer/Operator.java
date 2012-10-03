@@ -18,7 +18,7 @@ import static com.digipom.android.library.evaluator.lexer.Operator.Associativity
 import static com.digipom.android.library.evaluator.lexer.Operator.Associativity.RIGHT;
 
 public enum Operator implements Token {
-	ADD(0, LEFT), SUBTRACT(0, LEFT), NEGATION(1, RIGHT), MULTIPLY(2, LEFT), DIVIDE(2, LEFT), POWER(3, RIGHT);	
+	ADD(0, LEFT), SUBTRACT(0, LEFT), MULTIPLY(1, LEFT), DIVIDE(1, LEFT), NEGATION(2, RIGHT), POWER(3, RIGHT);	
 
 	public static enum Associativity {
 		LEFT, RIGHT
