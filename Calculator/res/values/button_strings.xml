@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    Copyright 2012 Digipom Inc. -->
+
+<!--    Licensed under the Apache License, Version 2.0 (the "License"); -->
+<!--    you may not use this file except in compliance with the License. -->
+<!--    You may obtain a copy of the License at -->
+
+<!--        http://www.apache.org/licenses/LICENSE-2.0 -->
+
+<!--    Unless required by applicable law or agreed to in writing, software -->
+<!--    distributed under the License is distributed on an "AS IS" BASIS, -->
+<!--    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. -->
+<!--    See the License for the specific language governing permissions and -->
+<!--    limitations under the License. -->
+<resources>
+
+    <string name="x_squared">x<sup>2</sup></string>
+    <string name="y_to_power_of_x">y<sup>x</sup></string>
+    <string name="e_to_power_of_x">e<sup>x</sup></string>
+    <string name="quit">QUIT</string>
+    <string name="cpt">CPT</string>
+    <string name="second">2ND</string>
+    <string name="blank"></string>
+    <string name="n">N</string>
+    <string name="xp_y">xP/Y</string>
+    <string name="cf">CF</string>
+    <string name="down_arrow">↓</string>
+    <string name="ins">INS</string>
+    <string name="up_arrow">↑</string>
+    <string name="del">DEL</string>
+    <string name="enter">ENTER</string>
+    <string name="set">SET</string>
+    <string name="p_y">P/Y</string>
+    <string name="i_y">I/Y</string>
+    <string name="amort">AMORT</string>
+    <string name="pv">PV</string>
+    <string name="bgn">BGN</string>
+    <string name="pmt">PMT</string>
+    <string name="clr_tvm">CLR TVM</string>
+    <string name="fv">FV</string>
+    <string name="irr">IRR</string>
+    <string name="npv">NPV</string>
+    <string name="k">K</string>
+    <string name="percent">%</string>
+    <string name="sqrt_x">√x</string>
+    <string name="_1_x">1/x</string>
+    <string name="x_exclamation">x!</string>
+    <string name="x">x</string>
+    <string name="ln">LN</string>
+    <string name="hyp">HYP</string>
+    <string name="inv">INV</string>
+    <string name="sin">SIN</string>
+    <string name="left_parenthesis">(</string>
+    <string name="cos">COS</string>
+    <string name="right_parenthesis">)</string>
+    <string name="tan">TAN</string>
+    <string name="data">DATA</string>
+    <string name="_7">7</string>
+    <string name="stat">STAT</string>
+    <string name="_8">8</string>
+    <string name="bond">BOND</string>
+    <string name="_9">9</string>
+    <string name="rand">RAND</string>
+    <string name="depr">DEPR</string>
+    <string name="_4">4</string>
+    <string name="delta_percent">Δ%</string>
+    <string name="_5">5</string>
+    <string name="brkevn">BRKEVN</string>
+    <string name="_6">6</string>
+    <string name="npr">nPr</string>
+    <string name="minus">-</string>
+    <string name="date">DATE</string>
+    <string name="_1">1</string>
+    <string name="iconv">ICONV</string>
+    <string name="_2">2</string>
+    <string name="profit">PROFIT</string>
+    <string name="_3">3</string>
+    <string name="ncr">nCr</string>
+    <string name="plus">+</string>
+    <string name="divide">÷</string>
+    <string name="mem">MEM</string>
+    <string name="_0">0</string>
+    <string name="format">FORMAT</string>
+    <string name="decimal">.</string>
+    <string name="reset">RESET</string>
+    <string name="toggle_positive_negative">+|-</string>
+    <string name="round">ROUND</string>
+    <string name="equals">=</string>
+    <string name="rcl">RCL</string>
+    <string name="clr_work">CLR WORK</string>
+    <string name="ce_c">CE|C</string>
+    <string name="sto">STO</string>
+    <string name="ans">ANS</string>
+    <string name="right_arrow">→</string>
+    <string name="ac">AC</string>
+
+</resources>

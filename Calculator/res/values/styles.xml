@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    Copyright 2012 Digipom Inc. -->
+
+<!--    Licensed under the Apache License, Version 2.0 (the "License"); -->
+<!--    you may not use this file except in compliance with the License. -->
+<!--    You may obtain a copy of the License at -->
+
+<!--        http://www.apache.org/licenses/LICENSE-2.0 -->
+
+<!--    Unless required by applicable law or agreed to in writing, software -->
+<!--    distributed under the License is distributed on an "AS IS" BASIS, -->
+<!--    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. -->
+<!--    See the License for the specific language governing permissions and -->
+<!--    limitations under the License. -->
+<resources>
+
+    <style name="calculatorBackground" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:background">@color/calculatorBackground</item>
+    </style>
+
+    <style name="outputLayout">
+        <item name="android:background">@drawable/digits_background</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/digitsPaddingLeftRight</item>
+        <item name="android:paddingRight">@dimen/digitsPaddingLeftRight</item>
+    </style>
+
+    <style name="modeView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/digitsTextSize</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/digitsText</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="outputView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/digitsTextSize</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/digitsText</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="calculatorButtonRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="secondTextRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="secondaryTextElementInRow" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/secondFunctionTextColor</item>
+        <item name="android:textSize">@dimen/secondaryTextSize</item>
+    </style>
+
+    <style name="secondaryTextElementSmallInRow" parent="secondaryTextElementInRow">
+        <item name="android:textSize">@dimen/secondaryTextSizeSmall</item>
+    </style>
+
+    <style name="calculatorButtonInRow" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/buttonTextSize</item>
+    </style>
+
+    <style name="darkerButtonInRow" parent="calculatorButtonInRow">
+        <item name="android:background">@drawable/darker_button_background</item>
+        <item name="android:textColor">@color/darkerButtonTextColor</item>
+    </style>
+
+    <style name="lighterButtonInRow" parent="calculatorButtonInRow">
+        <item name="android:background">@drawable/lighter_button_background</item>
+        <item name="android:textColor">@color/lighterButtonTextColor</item>
+    </style>
+
+    <style name="lightYellowButtonInRow" parent="calculatorButtonInRow">
+        <item name="android:background">@drawable/light_yellow_button_background</item>
+        <item name="android:textColor">@color/lightYellowButtonTextColor</item>
+    </style>
+
+    <style name="redButtonInRow" parent="calculatorButtonInRow">
+        <item name="android:background">@drawable/red_button_background</item>
+        <item name="android:textColor">@color/redButtonTextColor</item>
+    </style>
+
+    <style name="darkerButtonLargerInRow" parent="darkerButtonInRow">
+        <item name="android:textSize">@dimen/buttonTextSizeLarger</item>
+    </style>
+
+    <style name="lighterButtonLargerInRow" parent="lighterButtonInRow">
+        <item name="android:textSize">@dimen/buttonTextSizeLarger</item>
+    </style>
+
+    <style name="redButtonLargerInRow" parent="redButtonInRow">
+        <item name="android:textSize">@dimen/buttonTextSizeLarger</item>
+    </style>
+
+</resources>

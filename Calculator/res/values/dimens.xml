@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    Copyright 2012 Digipom Inc. -->
+
+<!--    Licensed under the Apache License, Version 2.0 (the "License"); -->
+<!--    you may not use this file except in compliance with the License. -->
+<!--    You may obtain a copy of the License at -->
+
+<!--        http://www.apache.org/licenses/LICENSE-2.0 -->
+
+<!--    Unless required by applicable law or agreed to in writing, software -->
+<!--    distributed under the License is distributed on an "AS IS" BASIS, -->
+<!--    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. -->
+<!--    See the License for the specific language governing permissions and -->
+<!--    limitations under the License. -->
+<resources>
+
+    <dimen name="calculatorPaddingLeft">4dp</dimen>
+    <dimen name="calculatorPaddingRight">4dp</dimen>
+    <dimen name="calculatorPaddingTop">4dp</dimen>
+    <dimen name="calculatorPaddingBottom">4dp</dimen>
+        
+    <dimen name="digitsPaddingLeftRight">8dp</dimen>
+    <dimen name="digitsTextSize">32dp</dimen>
+    
+    <dimen name="buttonTextSize">14dp</dimen>
+    <dimen name="buttonTextSizeLarger">16dp</dimen>
+    <dimen name="secondaryTextSizeSmall">11dp</dimen>
+    <dimen name="secondaryTextSize">14dp</dimen>
+    
+    <dimen name="digitsBackgroundCornerRadius">0dp</dimen>
+    <dimen name="digitsBackgroundStrokeWidth">1dp</dimen>
+
+    <item name="digitsBackgroundGradientAngle" format="integer" type="dimen">270</item>
+    <item name="digitsBackgroundGradientCenterY" format="float" type="dimen">0.2</item>
+    
+    <dimen name="calculatorButtonCornerRadius">4dp</dimen>
+    <dimen name="calculatorButtonStrokeWidth">1dp</dimen>
+    <dimen name="calculatorButtonMargin">2dp</dimen>
+
+    <item name="calculatorButtonGradientAngle" format="integer" type="dimen">270</item>
+    <item name="calculatorButtonGradientCenterY" format="float" type="dimen">0.1</item>
+
+</resources>

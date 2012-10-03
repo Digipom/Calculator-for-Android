@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    Copyright 2012 Digipom Inc. -->
+
+<!--    Licensed under the Apache License, Version 2.0 (the "License"); -->
+<!--    you may not use this file except in compliance with the License. -->
+<!--    You may obtain a copy of the License at -->
+
+<!--        http://www.apache.org/licenses/LICENSE-2.0 -->
+
+<!--    Unless required by applicable law or agreed to in writing, software -->
+<!--    distributed under the License is distributed on an "AS IS" BASIS, -->
+<!--    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. -->
+<!--    See the License for the specific language governing permissions and -->
+<!--    limitations under the License. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/calculatorPaddingBottom"
+    android:paddingLeft="@dimen/calculatorPaddingLeft"
+    android:paddingRight="@dimen/calculatorPaddingRight"
+    android:paddingTop="@dimen/calculatorPaddingTop" >
+
+    <LinearLayout style="@style/outputLayout" >
+
+        <TextView
+            android:id="@+id/modeView"
+            style="@style/modeView" />
+
+        <TextView
+            android:id="@+id/outputView"
+            style="@style/outputView" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/secondTextRow" >
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/blank" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/quit" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/set" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/del" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/ins" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/irr" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/calculatorButtonRow" >
+
+        <Button
+            android:id="@+id/second"
+            style="@style/lightYellowButtonInRow"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/second" />
+
+        <Button
+            android:id="@+id/cpt"
+            style="@style/darkerButtonInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/cpt" />
+
+        <Button
+            android:id="@+id/enter"
+            style="@style/darkerButtonInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/enter" />
+
+        <Button
+            android:id="@+id/up_arrow"
+            style="@style/darkerButtonInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/up_arrow" />
+
+        <Button
+            android:id="@+id/down_arrow"
+            style="@style/darkerButtonInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/down_arrow" />
+
+        <Button
+            android:id="@+id/cf"
+            style="@style/darkerButtonInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/cf" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/secondTextRow" >
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/xp_y" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/p_y" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/amort" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/bgn" />
+
+        <TextView
+            style="@style/secondaryTextElementSmallInRow"
+            android:text="@string/clr_tvm" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/blank" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/calculatorButtonRow" >
+
+        <Button
+            android:id="@+id/n"
+            style="@style/lighterButtonInRow"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/n" />
+
+        <Button
+            android:id="@+id/i_y"
+            style="@style/lighterButtonInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/i_y" />
+
+        <Button
+            android:id="@+id/pv"
+            style="@style/lighterButtonInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/pv" />
+
+        <Button
+            android:id="@+id/pmt"
+            style="@style/lighterButtonInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/pmt" />
+
+        <Button
+            android:id="@+id/fv"
+            style="@style/lighterButtonInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/fv" />
+
+        <Button
+            android:id="@+id/npv"
+            style="@style/darkerButtonInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/npv" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/secondTextRow" >
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/k" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/blank" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/_1_x" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/blank" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/blank" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/calculatorButtonRow" >
+
+        <Button
+            android:id="@+id/percent"
+            style="@style/darkerButtonLargerInRow"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/percent" />
+
+        <Button
+            android:id="@+id/sqrt_x"
+            style="@style/darkerButtonLargerInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/sqrt_x" />
+
+        <Button
+            android:id="@+id/x_squared"
+            style="@style/darkerButtonLargerInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/x_squared" />
+
+        <Button
+            android:id="@+id/right_arrow"
+            style="@style/darkerButtonLargerInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/right_arrow" />
+
+        <Button
+            android:id="@+id/ac"
+            style="@style/redButtonLargerInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/ac" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/secondTextRow" >
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/hyp" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/sin" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/cos" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/tan" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/rand" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/calculatorButtonRow" >
+
+        <Button
+            android:id="@+id/inv"
+            style="@style/darkerButtonLargerInRow"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/inv" />
+
+        <Button
+            android:id="@+id/left_parenthesis"
+            style="@style/darkerButtonLargerInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/left_parenthesis" />
+
+        <Button
+            android:id="@+id/right_parenthesis"
+            style="@style/darkerButtonLargerInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/right_parenthesis" />
+
+        <Button
+            android:id="@+id/y_to_power_of_x"
+            style="@style/darkerButtonLargerInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/y_to_power_of_x" />
+
+        <Button
+            android:id="@+id/divide"
+            style="@style/darkerButtonLargerInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/divide" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/secondTextRow" >
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/e_to_power_of_x" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/data" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/stat" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/bond" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/x_exclamation" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/calculatorButtonRow" >
+
+        <Button
+            android:id="@+id/ln"
+            style="@style/darkerButtonLargerInRow"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/ln" />
+
+        <Button
+            android:id="@+id/seven"
+            style="@style/lighterButtonLargerInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/_7" />
+
+        <Button
+            android:id="@+id/eight"
+            style="@style/lighterButtonLargerInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/_8" />
+
+        <Button
+            android:id="@+id/nine"
+            style="@style/lighterButtonLargerInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/_9" />
+
+        <Button
+            android:id="@+id/multiply"
+            style="@style/darkerButtonLargerInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/x" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/secondTextRow" >
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/round" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/depr" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/delta_percent" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/brkevn" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/npr" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/calculatorButtonRow" >
+
+        <Button
+            android:id="@+id/sto"
+            style="@style/darkerButtonLargerInRow"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/sto" />
+
+        <Button
+            android:id="@+id/four"
+            style="@style/lighterButtonLargerInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/_4" />
+
+        <Button
+            android:id="@+id/five"
+            style="@style/lighterButtonLargerInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/_5" />
+
+        <Button
+            android:id="@+id/six"
+            style="@style/lighterButtonLargerInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/_6" />
+
+        <Button
+            android:id="@+id/minus"
+            style="@style/darkerButtonLargerInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/minus" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/secondTextRow" >
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/blank" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/date" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/iconv" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/profit" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/ncr" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/calculatorButtonRow" >
+
+        <Button
+            android:id="@+id/rcl"
+            style="@style/darkerButtonLargerInRow"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/rcl" />
+
+        <Button
+            android:id="@+id/one"
+            style="@style/lighterButtonLargerInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/_1" />
+
+        <Button
+            android:id="@+id/two"
+            style="@style/lighterButtonLargerInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/_2" />
+
+        <Button
+            android:id="@+id/three"
+            style="@style/lighterButtonLargerInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/_3" />
+
+        <Button
+            android:id="@+id/plus"
+            style="@style/darkerButtonLargerInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/plus" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/secondTextRow" >
+
+        <TextView
+            style="@style/secondaryTextElementSmallInRow"
+            android:text="@string/clr_work" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/mem" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/format" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/reset" />
+
+        <TextView
+            style="@style/secondaryTextElementInRow"
+            android:text="@string/ans" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/calculatorButtonRow" >
+
+        <Button
+            android:id="@+id/ce_c"
+            style="@style/darkerButtonLargerInRow"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/ce_c" />
+
+        <Button
+            android:id="@+id/zero"
+            style="@style/lighterButtonLargerInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/_0" />
+
+        <Button
+            android:id="@+id/dot"
+            style="@style/lighterButtonLargerInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/decimal" />
+
+        <Button
+            android:id="@+id/plusMinus"
+            style="@style/lighterButtonLargerInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:layout_marginRight="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/toggle_positive_negative" />
+
+        <Button
+            android:id="@+id/equals"
+            style="@style/darkerButtonLargerInRow"
+            android:layout_marginLeft="@dimen/calculatorButtonMargin"
+            android:onClick="onButtonClick"
+            android:text="@string/equals" />
+    </LinearLayout>
+
+</LinearLayout>

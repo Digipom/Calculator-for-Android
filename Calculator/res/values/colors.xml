@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    Copyright 2012 Digipom Inc. -->
+
+<!--    Licensed under the Apache License, Version 2.0 (the "License"); -->
+<!--    you may not use this file except in compliance with the License. -->
+<!--    You may obtain a copy of the License at -->
+
+<!--        http://www.apache.org/licenses/LICENSE-2.0 -->
+
+<!--    Unless required by applicable law or agreed to in writing, software -->
+<!--    distributed under the License is distributed on an "AS IS" BASIS, -->
+<!--    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. -->
+<!--    See the License for the specific language governing permissions and -->
+<!--    limitations under the License. -->
+<resources>
+
+    <color name="calculatorBackground">#585858</color>
+    <color name="digitsText">#1B1E1C</color>
+    <color name="digitsBackground">#A0B2A5</color>
+    <color name="digitsBackgroundBorderStroke">#424242</color>
+    <color name="digitsBackgroundGradientStart">@color/digitsBackgroundBorderStroke</color>
+    <color name="digitsBackgroundGradientMiddle">@color/digitsBackground</color>
+    <color name="digitsBackgroundGradientEnd">@color/digitsBackground</color>
+    <color name="secondFunctionTextColor">#F7E296</color>
+    <color name="calculatorButtonFocusStrokeColor">#FFFFFF</color>
+    <color name="darkerButtonTextColor">#FFFFFF</color>
+    <color name="darkerButtonGradientStart">#585858</color>
+    <color name="darkerButtonGradientMiddle">#3F3F3F</color>
+    <color name="darkerButtonGradientEnd">#3F3F3F</color>
+    <color name="darkerButtonPressedGradientStart">#2B2B2B</color>
+    <color name="darkerButtonPressedGradientMiddle">#1E1E1E</color>
+    <color name="darkerButtonPressedGradientEnd">#1E1E1E</color>
+    <color name="darkerButtonStrokeColor">#333333</color>
+    <color name="darkerButtonPressedStrokeColor">#191919</color>
+    <color name="lighterButtonTextColor">#FFFFFF</color>
+    <color name="lighterButtonGradientStart">#ADADAD</color>
+    <color name="lighterButtonGradientMiddle">#7A7A7A</color>
+    <color name="lighterButtonGradientEnd">#7A7A7A</color>
+    <color name="lighterButtonPressedGradientStart">#727272</color>
+    <color name="lighterButtonPressedGradientMiddle">#5B5B5B</color>
+    <color name="lighterButtonPressedGradientEnd">#5B5B5B</color>
+    <color name="lighterButtonStrokeColor">#666666</color>
+    <color name="lighterButtonPressedStrokeColor">#565656</color>
+    <color name="lightYellowButtonTextColor">#222222</color>
+    <color name="lightYellowButtonGradientStart">#FFF3CC</color>
+    <color name="lightYellowButtonGradientMiddle">#F7E296</color>
+    <color name="lightYellowButtonGradientEnd">#F7E296</color>
+    <color name="lightYellowButtonPressedGradientStart">#7F734D</color>
+    <color name="lightYellowButtonPressedGradientMiddle">#7A704A</color>
+    <color name="lightYellowButtonPressedGradientEnd">#7A704A</color>
+    <color name="lightYellowButtonStrokeColor">#E5D08B</color>
+    <color name="lightYellowButtonPressedStrokeColor">#726845</color>
+    <color name="redButtonTextColor">#FFFFFF</color>
+    <color name="redButtonGradientStart">#FFCCCC</color>
+    <color name="redButtonGradientMiddle">#C80808</color>
+    <color name="redButtonGradientEnd">#C80808</color>
+    <color name="redButtonPressedGradientStart">#7F6767</color>
+    <color name="redButtonPressedGradientMiddle">#630303</color>
+    <color name="redButtonPressedGradientEnd">#630303</color>
+    <color name="redButtonStrokeColor">#A30606</color>
+    <color name="redButtonPressedStrokeColor">#630303</color>
+
+</resources>
